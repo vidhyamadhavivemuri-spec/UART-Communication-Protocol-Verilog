@@ -20,7 +20,7 @@ The project also includes a **UART loopback test**, where transmitted data is di
 * Analyze simulation waveforms using GTKWave.
 * Maintain the complete RTL and verification environment using Git/GitHub.
 
-## ⚙️ UART Frame Format
+##  UART Frame Format
 
 The UART frame used in this project consists of:
 
