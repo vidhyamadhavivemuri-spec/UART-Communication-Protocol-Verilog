@@ -1,4 +1,3 @@
-# UART-Communication-Protocol-Verilog
 # UART Communication Protocol – Verilog
 
 A Verilog-based implementation of the **Universal Asynchronous Receiver-Transmitter (UART)** communication protocol, including RTL design, simulation, functional verification, and loopback testing.
@@ -21,7 +20,7 @@ The project also includes a **UART loopback test**, where transmitted data is di
 * Analyze simulation waveforms using GTKWave.
 * Maintain the complete RTL and verification environment using Git/GitHub.
 
-##  UART Frame Format
+## ⚙️ UART Frame Format
 
 The UART frame used in this project consists of:
 
@@ -32,7 +31,7 @@ Idle | Start | Data Bits | Stop
 
 The communication is asynchronous, meaning no separate clock signal is transmitted along with the data.
 
-##  Project Architecture
+## Project Architecture
 
 ```text
              ┌─────────────────┐
@@ -68,7 +67,7 @@ The communication is asynchronous, meaning no separate clock signal is transmitt
         rx_data / rx_valid
 ```
 
-# Repository Structure
+##  Repository Structure
 
 ```text
 UART-Communication-Protocol-Verilog/
@@ -96,7 +95,7 @@ UART-Communication-Protocol-Verilog/
 └── README.md
 ```
 
-# Verification
+##  Verification
 
 The design is verified using multiple testbenches:
 
@@ -124,7 +123,7 @@ TX → Serial Line → RX
 
 This verifies the complete transmit-and-receive path.
 
-# Simulation
+## Simulation
 
 The project uses **Icarus Verilog** for compilation and simulation.
 
@@ -154,7 +153,7 @@ or:
 gtkwave simulation/uart_rx.vcd
 ```
 
-# Verification Result
+##  Verification Result
 
 The UART receiver was successfully verified by transmitting the ASCII character:
 
@@ -166,7 +165,7 @@ The simulation confirmed successful reception of the expected data.
 
 The loopback testbench provides additional end-to-end verification of the UART communication path.
 
-# Tools & Technologies
+## Tools & Technologies
 
 | Category                | Technology     |
 | ----------------------- | -------------- |
@@ -177,7 +176,7 @@ The loopback testbench provides additional end-to-end verification of the UART c
 | Repository              | GitHub         |
 | Development Environment | MSYS2 UCRT64   |
 
-# Concepts Demonstrated
+## Concepts Demonstrated
 
 * RTL Design
 * Finite State Machines
@@ -190,7 +189,7 @@ The loopback testbench provides additional end-to-end verification of the UART c
 * Loopback Testing
 * Git/GitHub Workflow
 
-# Future Enhancements
+## Future Enhancements
 
 Possible extensions include:
 
@@ -203,13 +202,13 @@ Possible extensions include:
 * FPGA hardware implementation
 * Formal verification
 
-# Author
+## Author
 
 **Vemuri Vidhya Madhavi**
 
-Electronics and Telematics Engineering
+Electronics and Communication Engineering
 Interested in VLSI, Digital Design, Verilog, and Embedded Systems.
 
-# License
+## License
 
 This project is licensed under the terms provided in the repository's `LICENSE` file.
